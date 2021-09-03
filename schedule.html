@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CINEMORY </title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/List4.css" />
+    <link rel="stylesheet" href="assets/css/sidebar.css"/>
+    <link rel="shortcut icon" href="favocon.ico">
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.good-menu').slideUp("slow");
+            $('.con-menu').slideUp("slow");
+            $('.qui-menu').slideUp("slow");
+            $('.he-menu').slideUp("slow");
+            $('.mira-menu').slideUp("slow");
+            $('.be-menu').slideUp("slow");
+
+/*
+            $('.section').hover(function () {
+                $(this).css('height', '1750px')
+            }, function () {
+                $(this).css('height', '1450px')
+            });
+*/
+
+
+            $(".good").hover(function () {
+                $(".good-menu").stop().slideDown("slow");
+                $("#good").attr('src', 'good.jpg').css("border", "solid 5px #3F3D66").on('click', function () {
+                    location.href = "https://movie.naver.com/movie/bi/mi/basic.nhn?code=18878";
+                });
+            }, function () {
+                $(".good-menu").stop().slideUp("slow");
+                $("#good").attr('src', 'good_2.jpg').css("border-style", "none");
+            });
+
+
+            $(".con").hover(function () {
+                $('.con-menu').stop().slideDown("slow");
+                $("#con").attr('src', 'conju.jpg').css("border", "solid 5px #3F3D66").on('click', function () {
+                    location.href = "https://movie.naver.com/movie/bi/mi/basic.nhn?code=190726";
+                });
+            }, function () {
+                $('.con-menu').stop().slideUp("slow");
+                $("#con").attr('src', 'conju_2.jpg').css("border-style", "none");
+            });
+
+            $(".qui").hover(function () {
+                $('.qui-menu').stop().slideDown("slow");
+                $("#qui").attr('src', 'qui.jpg').css("border", "solid 5px #3F3D66").on('click', function () {
+                    location.href = "https://movie.naver.com/movie/bi/mi/basic.nhn?code=189368";
+                });
+            }, function () {
+                $('.qui-menu').stop().slideUp("slow");
+                $("#qui").attr('src', 'qui_2.jpg').css("border-style", "none");
+            });
+            $(".he").hover(function () {
+                $('.he-menu').stop().slideDown("slow");
+                $("#he").attr('src', 'he.jpg').css("border", "solid 5px #3F3D66").on('click', function () {
+                    location.href = "https://movie.naver.com/movie/bi/mi/basic.nhn?code=191631";
+                });
+            }, function () {
+                $('.he-menu').stop().slideUp("slow");
+                $("#he").attr('src', 'he_2.jpg').css("border-style", "none");
+            });
+            $(".mira").hover(function () {
+                $('.mira-menu').stop().slideDown("slow");
+                $("#mira").attr('src', 'mira.jpg').css("border", "solid 5px #3F3D66").on('click', function () {
+                    location.href = "https://movie.naver.com/movie/bi/mi/basic.nhn?code=199860";
+                });
+            }, function () {
+                $('.mira-menu').stop().slideUp("slow");
+                $("#mira").attr('src', 'mira_2.jpg').css("border-style", "none");
+            });
+            $(".be").hover(function () {
+                $('.be-menu').stop().slideDown("slow");
+                $("#be").attr('src', 'be.jpg').css("border", "solid 5px #3F3D66").on('click', function () {
+                    location.href = "https://movie.naver.com/movie/bi/mi/basic.nhn?code=187323";
+                });
+            }, function () {
+                $('.be-menu').stop().slideUp("slow");
+                $("#be").attr('src', 'be_2.jpg').css("border-style", "none");
+            });
+
+
+
+        });
+
+    </script>
+
+</head>
+
+<body class="list-body">
+    <input type="checkbox" id="menuicon">
+    <label for="menuicon">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+    <div class="sidebar">
+        <div class="sidebar_menu">
+            <a href = "home.html"><span>CINEMORY</span></a>
+            <a href ="location.html"><span>영화관 위치</span></a>
+            <a href ="search.html"><span>영화 검색</span></a>
+            <a href ="ranking.html"><span>영화 순위</span></a>
+            <a href ="schedule.html"><span>상영 예정작</span></a>
+        </div>
+    </div>
+    <header>
+        <a href="home.html" class="logo">
+            <span class="cine">CINE</span>
+            <span class="mory">MORY</span>
+        </a>
+    </header>
+
+    <div class="section">
+        <div class="section-title">
+            <h2>| Newly-Released</h2>
+        </div>
+        <div class="ex_mov">
+            <div class=good>
+                <img id="good" src="good_2.jpg">
+                <!--"You make me wanna be a better man."-->
+                <div class="good-menu">
+                    <center><iframe width="560" height="315" src="https://www.youtube.com/embed/dlLKo-_slWg"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe></center>
+                </div>
+            </div>
+            <div class=con>
+                <img id="con" src="conju_2.jpg">
+                <!--"You make me wanna be a better man."-->
+                <div class="con-menu">
+                    <center><iframe width="560" height="315" src="https://www.youtube.com/embed/MRY26k7sUkY"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe></center>
+                </div>
+            </div>
+            <div class="qui">
+                <img id="qui" src="qui_2.jpg">
+                <div class="qui-menu">
+                    <center><iframe width="560" height="315" src="https://www.youtube.com/embed/clWcJd9ZIbY"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe></center>
+                </div>
+                <!--침묵끝에 시작된 반격-->
+            </div>
+            <div class="he">
+                <img id="he" src="he_2.jpg">
+                <!--오늘만을 위해 살지만 멈출 수 없어-->
+                <div class="he-menu">
+                    <center><iframe width="560" height="315" src="https://www.youtube.com/embed/E0yZEgWgAuM"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe></center>
+                </div>
+            </div>
+            <div class="mira">
+                <img id="mira" src="mira_2.jpg">
+                <!--내가 이 양원역을 왜 그래 만들고 싶었는지 아나?-->
+                <div class="mira-menu">
+                    <center><iframe width="560" height="315" src="https://www.youtube.com/embed/ha54tghMPTw"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe></center>
+                </div>
+            </div>
+            <div class="be">
+                <img id="be" src="be_2.jpg">
+                <!--잘 왔어, 에디. 오랜만이야. 우린 네가 아주 그리웠어.-->
+                <div class="be-menu">
+                    <center><iframe width="560" height="315" src="https://www.youtube.com/embed/V6aWnlhH6ug"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe></center>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

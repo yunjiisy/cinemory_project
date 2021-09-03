@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CINEMORY</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.2" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/sidebar.css" />
+    <link rel="shortcut icon" href="favocon.ico" />
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $('#anima1').hover(
+          function () {
+            $('#ani1').css({
+              background: '#325258',
+            });
+          },
+          function () {
+            $('#ani1').css({
+              background: 'none',
+            });
+          }
+        );
+        $('#anima2').hover(
+          function () {
+            $('#ani2').css({
+              background: '#325258',
+            });
+          },
+          function () {
+            $('#ani2').css({
+              background: 'none',
+            });
+          }
+        );
+        $('#anima3').hover(
+          function () {
+            $('#ani3').css({
+              background: '#325258',
+            });
+          },
+          function () {
+            $('#ani3').css({
+              background: 'none',
+            });
+          }
+        );
+        $('#anima4').hover(
+          function () {
+            $('#ani4').css({
+              background: '#325258',
+            });
+          },
+          function () {
+            $('#ani4').css({
+              background: 'none',
+            });
+          }
+        );
+      });
+    </script>
+  </head>
+
+  <body>
+    <input type="checkbox" id="menuicon" />
+    <label for="menuicon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <div class="sidebar">
+      <div class="sidebar_menu">
+        <a href="home.html"><span>CINEMORY</span></a>
+        <a href="location.html"><span>영화관 위치</span></a>
+        <a href="search.html"><span>영화 검색</span></a>
+        <a href="ranking.html"><span>영화 순위</span></a>
+        <a href="schedule.html"><span>상영 예정작</span></a>
+      </div>
+    </div>
+
+    <header>
+      <a href="home.html" class="logo">
+        <span class="cine">CINE</span>
+        <span class="mory">MORY</span>
+      </a>
+    </header>
+
+    <div class="center">
+      <div class="circle">
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <a href="index.html">
+          <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_KhAhD9/30 - Video.json" background="transparent" speed="1" style="width: 150px; height: 165px" loop autoplay>
+          </lottie-player>
+        </a>
+      </div>
+      <div class="vertical"></div>
+      <div class="horizontal"></div>
+
+      <div class="title">
+        <h1>CINEMORY</h1>
+        <p>
+          CINEMORY IS MADE BY COMBINING CINEMA AND MEMORY<br />
+          MAKE YOUR OWN MEMORIES ABOUT MOVIE IN CINEMORY
+        </p>
+      </div>
+
+      <div class="horizontal"></div>
+      <div class="container">
+        <div id="anima1">
+          <a href="location.html" class="item_s"><img src="1.png" class="item-img" /><span id="ani1">영화관 위치</span></a>
+        </div>
+        <div id="anima2">
+          <a href="search.html" class="item_s"><img src="2.png" class="item-img" /><span id="ani2">영화 검색</span></a>
+        </div>
+        <div id="anima3">
+          <a href="ranking.html" class="item_s"><img src="3.png" class="item-img" /><span id="ani3">영화 순위</span></a>
+        </div>
+        <div id="anima4">
+          <a href="schedule.html" class="item_s"><img src="4.png" class="item-img" /><span id="ani4">상영 예정작</span></a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

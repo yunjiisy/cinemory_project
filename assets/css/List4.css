@@ -1,0 +1,51 @@
+.ex_mov {
+  padding: 30px;
+}
+
+.good-menu {
+  padding: 10px;
+}
+
+.con-menu {
+  padding: 10px;
+}
+
+.qui-menu {
+  padding: 10px;
+}
+
+.he-menu {
+  padding: 10px;
+}
+
+.mia-menu {
+  padding: 10px;
+}
+
+.be-menu {
+  padding: 10px;
+}
+
+.section {
+  height: 1450px;
+  transition: all 1s;
+}
+.section:hover {
+  height: 1750px;
+  transition: all 0.8s;
+}
+@font-face {
+  font-family: 'S-CoreDream-3Light';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h2 {
+  letter-spacing: 0.2em;
+  animation-delay: 1s;
+  animation: aa 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  font-family: 'S-CoreDream-3Light';
+  font-weight: 1000;
+  text-shadow: 2px 2px 2px rgb(112, 115, 148);
+}

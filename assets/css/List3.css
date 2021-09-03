@@ -1,0 +1,113 @@
+@font-face {
+  font-family: 'twayair';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_tway@1.0/twayair.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'S-CoreDream-3Light';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.section-title {
+  font-family: 'S-CoreDream-3Light';
+  font-weight: 1000;
+  text-shadow: 2px 2px 2px rgb(112, 115, 148);
+}
+
+.img {
+  position: relative;
+  width: 130px;
+  height: 200px;
+  float: left;
+  padding: 0px 31px;
+}
+
+.image {
+  display: block;
+  width: 130px;
+  height: 200px;
+  float: left;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 200px;
+  width: 130px;
+  margin: 0px 31px;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.img:hover .overlay {
+  opacity: 1;
+}
+.img:hover .image {
+  opacity: 0.3;
+}
+
+.text {
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: 'S-CoreDream-3Light';
+}
+
+.section {
+  margin: 0 auto;
+  margin-top: 240px;
+  width: 960px;
+  min-height: 900px;
+  background-color: rgba(40, 40, 40, 0.8);
+  margin-bottom: 240px;
+}
+
+h2 {
+  letter-spacing: 0.2em;
+  animation-delay: 1s;
+  animation: aa 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  text-shadow: 2px 2px 2px rgb(112, 115, 148);
+}
+
+.title {
+  margin: 10px 0px 30px 0px;
+  padding: 0px 31px;
+  width: 130px;
+  height: 50px;
+  float: left;
+  color: rgb(217, 229, 255);
+}
+.rank {
+  font-family: 'S-CoreDream-3Light';
+  margin: 20px 0px 10px 0px;
+  padding: 0px 31px;
+  width: 130px;
+  height: 35px;
+  float: left;
+  color: white;
+  font-size: 20px;
+  color: rgb(145, 157, 183);
+  text-shadow: 1px 1px 3px rgb(112, 115, 148);
+}
+
+.text a {
+  font-size: 13px;
+}
+.title:hover {
+  color: rgb(145, 157, 183);
+}
+.text:hover {
+  color: rgb(189, 208, 250);
+}
